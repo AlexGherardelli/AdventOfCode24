@@ -32,4 +32,11 @@ In the example above, the reports can be found safe or unsafe by checking those 
 
 So, in this example, 2 reports are safe.
 
-Analyze the unusual data from the engineers. How many reports are safe?"""
+Analyze the unusual data from the engineers. How many reports are safe?
+"""
+
+
+def parse_input(filename):
+    with open(filename) as f:
+        lst = [int(line.split()[0]) for line in lines]
+    return lst_a, lst_b
